@@ -19,6 +19,10 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        // Test for encapsulation
+        // plane.GetComponent<Unit>().speed = 0f;
+
+
         plane.GetComponent<Unit>().currentHex = GameObject.Find("Ground_Hex_Tile (14)");
         plane.GetComponent<Unit>().currentHex.GetComponent<Hex>().isOccupied = true;
         boat.GetComponent<Unit>().currentHex = GameObject.Find("Sea_Hex_Tile (1)");

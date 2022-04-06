@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SurfUnit : Unit
+public class SurfUnit : Unit //INHERITANCE
 {
     
 
@@ -21,12 +21,14 @@ public class SurfUnit : Unit
             waitTime += speed;
             if (waitTime > timerToMove)
             {
+                // ABSTRACTION
                 Move();
                 waitTime = 0;
             }
         }
     }
 
+    // POLYMORPHISM
     protected override void Move()
     {
         int randomIndex;

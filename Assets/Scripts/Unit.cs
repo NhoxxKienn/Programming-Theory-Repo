@@ -48,6 +48,7 @@ public class Unit : MonoBehaviour
         }
     }
 
+    // POLYMORPHISM, ABSTRACTION, 
     protected virtual void Move()
     {
         int randomIndex;
